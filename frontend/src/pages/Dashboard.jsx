@@ -83,8 +83,8 @@ const totalMonths =
   }
 
   const url = historyId
-    ? "http://127.0.0.1:8000/history-details/" + historyId
-    : "http://127.0.0.1:8000/dashboard/" + userId;
+    ? "https://finrelief-ai-1-ffz7.onrender.com/history-details/" + historyId
+    : "https://finrelief-ai-1-ffz7.onrender.com/dashboard/" + userId;
 
   axios
     .get(url)
@@ -97,7 +97,7 @@ const totalMonths =
   try {
     console.log("Negotiation Letter:", latestNegotiationLetter.current);
     const res = await axios.post(
-      "http://127.0.0.1:8000/download-report",
+      "https://finrelief-ai-1-ffz7.onrender.com/download-report",
       {
         user_id: Number(userId),
         history_id: historyId ? Number(historyId) : null,
@@ -132,7 +132,7 @@ const totalMonths =
   };
 
   const sendMessage = async () => {
-    const res = await axios.post("http://127.0.0.1:8000/chat", {
+    const res = await axios.post("https://finrelief-ai-1-ffz7.onrender.com/chat", {
       user_id: Number(userId),
       question: message,
     });
@@ -142,7 +142,7 @@ const totalMonths =
   const getSettlementAdvice = async () => {
   try {
    const res = await axios.post(
-  "http://127.0.0.1:8000/settlement-advice",
+  "https://finrelief-ai-1-ffz7.onrender.com/settlement-advice",
   {
     user_id: Number(userId),
     history_id: historyId ? Number(historyId) : null,
@@ -171,7 +171,7 @@ const totalMonths =
   try {
 
     const res = await axios.post(
-      "http://127.0.0.1:8000/negotiation-letter",
+      "https://finrelief-ai-1-ffz7.onrender.com/negotiation-letter",
       {
         user_id: Number(userId),
         history_id: historyId ? Number(historyId) : null,
@@ -189,7 +189,7 @@ setNegotiationLetter(res.data.letter);
 
     alert("Negotiation Letter Generated Successfully!");
     const pdfRes = await axios.get(
-  "http://127.0.0.1:8000/download-negotiation-letter",
+  "https://finrelief-ai-1-ffz7.onrender.com/download-negotiation-letter",
   {
     responseType: "blob",
   }
