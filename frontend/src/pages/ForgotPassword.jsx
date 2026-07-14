@@ -171,7 +171,7 @@ const [passwordError, setPasswordError] = useState("");
   Save Password
 </button>
 <p className="register-text">
-  Forgot password?
+  remembered password?
 </p>
 
 <button
