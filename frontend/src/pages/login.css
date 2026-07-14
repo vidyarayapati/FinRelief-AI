@@ -1,0 +1,189 @@
+/* Full Page */
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: auto;
+}
+
+/* Dark Overlay */
+.overlay {
+    width: 100%;
+    min-height: 100vh;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Login Content */
+.login-content{
+    width:100%;
+    max-width:600px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Heading */
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-title{
+    color: white;
+    font-size: 200px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: -40px;
+    margin-top: -120px;
+    letter-spacing: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    white-space: nowrap;
+}
+
+.login-header h3 {
+    color: white;
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.login-header p {
+    color: #f3f4f6;
+    font-size: 36px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+.login-content input{
+    width: 620px;
+    height: 75px;
+
+    padding: 0 25px;
+
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 40px;
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+/* Login Button */
+.login-content button{
+    width: 620px;
+    height: 75px;
+
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #2563EB;
+    color: white;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-content button:hover {
+    background: #1D4ED8;
+    transform: translateY(-2px);
+}
+
+/* Register Text */
+.register-text {
+    margin-top: 34px;
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+/* Create Account Button */
+.register-btn{
+    width: 620px !important;
+    height: 75px;
+
+    margin-top: 0;
+
+    border: 2px solid white;
+
+    background: transparent;
+
+    color: white;
+
+    border-radius: 12px;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background: white;
+    color: #2563EB;
+}
+.password-box{
+    position: relative;
+    width: 620px;
+    margin-bottom: 20px;
+}
+
+.password-box input{
+    width: 100%;
+    height: 75px;
+
+    padding-right: 50px;
+    box-sizing: border-box;
+
+    border-radius: 12px;
+    font-size: 40px;
+}
+
+.eye-icon{
+    position: absolute;
+    right: 25px;
+    top: 65%;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    color: #666;
+    font-size: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.eye-icon:hover{
+    color: #2563EB;
+}
