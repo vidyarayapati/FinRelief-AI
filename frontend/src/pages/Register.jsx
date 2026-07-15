@@ -35,7 +35,7 @@ if (!passwordRegex.test(password)) {
 }
 
 setPasswordError("");
-      const res = await axios.post("http://127.0.0.1:8000/register", {
+      const res = await axios.post("https://finrelief-ai-1-ffz7.onrender.com/register", {
         email,
         password,
       });

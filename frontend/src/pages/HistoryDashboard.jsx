@@ -13,7 +13,7 @@ function HistoryDashboard() {
     useEffect(() => {
 
         axios
-            .get("http://127.0.0.1:8000/history-details/" + historyId)
+            .get("https://finrelief-ai-1-ffz7.onrender.com/history-details/" + historyId)
             .then((res) => {
 
                 setData(res.data);

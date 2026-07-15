@@ -41,7 +41,7 @@ const remainingEmiMonths =
   try {
     const userId = localStorage.getItem("user_id");
 
-   await axios.post("http://127.0.0.1:8000/financial-details", {
+   await axios.post("https://finrelief-ai-1-ffz7.onrender.com/financial-details", {
   user_id: Number(userId),
   total_debt: Number(debt),
   income: Number(income),

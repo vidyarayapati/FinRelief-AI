@@ -31,7 +31,7 @@ const [passwordError, setPasswordError] = useState("");
 
   try {
     const res = await axios.post(
-      "http://127.0.0.1:8000/reset-password",
+      "https://finrelief-ai-1-ffz7.onrender.com/reset-password",
       {
         email,
         password,
