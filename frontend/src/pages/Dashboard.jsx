@@ -7,7 +7,7 @@ import html2pdf from "html2pdf.js";
 
 
 import backgroundImage from "../assets/background2.png";
-import "./Login.css";
+import "./login.css";
 import "./Dashboard.css";
 import {
   Chart as ChartJS,
