@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import backgroundImage from "../assets/background.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import "./Login.css";
+import "./login.css";
 
 function ForgotPassword() {
   const navigate = useNavigate();

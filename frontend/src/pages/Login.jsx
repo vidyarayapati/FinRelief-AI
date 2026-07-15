@@ -3,7 +3,7 @@ import api from "../services/api";
 import { useNavigate } from "react-router-dom";
 import backgroundImage from "../assets/background.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import "./Login.css";
+import "./login.css";
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");

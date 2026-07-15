@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import backgroundImage from "../assets/background2.png";
-import "./Login.css";
+import "./login.css";
 
 function FinancialForm() {
   const [debt, setDebt] = useState("");
